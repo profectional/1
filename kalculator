@@ -3,30 +3,28 @@ using namespace std;
 
 int main() {
     char op;
-    double num1, num2;
+    double x, y;
 
-    cout << "Enter an operator (+, -, *, /): ";
+    cout << "(+, -, *, /): ";
     cin >> op;
 
-    cout << "Enter two numbers: ";
-    cin >> num1 >> num2;
+    cout << "x,y: ";
+    cin >> x >> y;
 
     switch(op) {
         case '+':
-            cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+            cout << x << " + " << y << " = " << x + y << endl;
             break;
-        case '-':
-            cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+       case '-':
+            cout << x << " - " << y << " = " << x + y << endl;
             break;
         case '*':
-            cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+            cout << x << " * " << y << " = " << x + y << endl;
             break;
-        case '/':
-            cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+       case '/':
+            cout << x << " / " << y << " = " << x + y << endl;
             break;
-        default:
-            cout << "Invalid operator" << endl;
-            break;
+
     }
     return 0;
 }
